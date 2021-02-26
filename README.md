@@ -16,7 +16,7 @@
 
 ### Web Screenshot
 
-<p align="">
+<p align="center">
    <img src="/github/list2.png" width="500px" height="300px">
 </h1>
 <p align="center">   
