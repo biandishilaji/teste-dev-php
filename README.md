@@ -1,75 +1,125 @@
-# Teste para candidatos à vaga de Desenvolvedor PHP.
 
-Olá caro desenvolvedor, nesse teste analisaremos seu conhecimento geral e inclusive velocidade de desenvolvimento. Abaixo explicaremos tudo o que será necessário.
+<p align="center">
+   <img src="/github/puzl.jpg" width="350px" height="auto">
+</div>
 
-## Instruções
+#  Descrição do projeto
+<h4> Projeto para gerencimaneto de carros e marcas. Totalmente modularizado e com a versão mais estável do VueJs e Laravel com banco de dados em MYSQL.</h4>
 
-Você deve desenvolver uma API, utilizando PHP (Framework Laravel 8).
+# :pushpin: Tabela de conteúdos
+
+* [Tecnologias](#computer-technologies)
+* [Ferramentas](#rocket-features)
+* [Como executar](#construction_worker-how-to-run)
+* [License](#closed_book-license)
 
 
-A escolha das bibliotecas, banco de dados, arquitetura, etc, fica a seu critério.
+### Web Screenshot
 
-O código precisa rodar em macOS ou Ubuntu (preferencialmente como container Docker).
+<h1 align="center">
+   <img src="/github/skeleton.png" width="500px" height="300px">
+   <img src="/github/list2.png" width="500px" height="300px">
+</h1>
+<p align="center">   
+   <img src="/github/create.png" width="1024px" height="450px">
+</p>
 
-Altere o arquivo README explicando o que é preciso para rodar sua aplicação.
 
-O teste
---------
+# :computer: Technologies
+This project was made using the follow technologies:
 
-### Back-End/PHP
+* [VueJS](https://vuejs.org/)      
+* [Vuex](https://vuejs.org/)   
+* [Laravel 8](https://laravel.com/)   
+* [MYSQL](https://mysql.com/)   
+* [Vue Router](https://vuejs.org/) 
+* [Bootstrap](https://getbootstrap.com/)            
 
-A primeira etapa será o desenvolvimento **backend/PHP**:
+# :rocket: Features
 
-**Descrição:**
+  `BIBLIOTECAS` 
+- Laravel Cors
+- Bootstrap-Vue
+- Axios
+- Store
+- Router
+- Vue Mask
 
-- Você deverá desenvolver uma 'mini api' para que seja possível realizar operações CRUD do objeto Carro.
-> **Obs:**
-> - Você pode usar arquivo (txt, json, sqlite ou mysql) como banco de dados.
-> - Cada carro deve ter ID, Marca, Modelo, Ano.
+# Componentes desenvolvidos durante a criação do projeto
 
-Sugerimos o retorno dessa 'mini api' nas seguinte urls:
+`COMPONENTES.VUE`
+- Skeleton
+- Pagination
+- Modal
+- Select2 com <a href="select2.org">select2.org</a>
 
- - `/carros` - [GET] deve retornar todos os carros cadastrados.
- - `/carros` - [POST] deve cadastrar um novo carro.
- - `/carros/{id}`[GET] deve retornar o carro com ID especificado.
- - `/carros/{id}`[PUT] deve atualizar os dados do carro com ID especificado.
- - `/carros/{id}`[DELETE] deve apagar o carro com ID especificado.
+### 📦 Run API
+
+
+<p align="center">
+   <img src="/github/laravel.png" width="350px" height="auto">
+</div>
+
+```bash
+# Go to api folder
+$ cd api
+
+# Install Dependencies
+$ composer install
+
+# Generate migrations
+php artisan migrate
+
+# Generate seeders 
+php artisan db:seed
+
+# Run Aplication
+$ php artisan serve or host nginx, apache
+```
+## API ROUTES
+
+ get('/cars/')
+ get('/cars/list')
+ get('/cars/widgets)
+ get('/cars/{id}')
  
+ put('/cars/{id}')
 
-### Front-End
+ post('/cars/')
 
-Para a segunda etapa do teste, você deverá desenvolver uma SPA (Single Page Application) com Vue.js e nela deve ser possível:
+ delete('/cars/{id}')
+            
+ get('/brands/')
+ get('/brands/list')
+ 
+ post('/')
 
-- Ver a lista de carros cadastrados
-- Criar um novo carro
-- Editar um carro existente
-- Apagar um carro existente
+### 💻 Run Web Project
 
-> **Obs:**
-> - A página deve ser responsiva.
-> - A página deve funcionar 100% via AJAX, sem outros carregamentos de páginas.
-> - Ao criar/editar um carro, o campo "marca" deverá ser um `SELECT`
+<p align="center">
+   <img src="/github/vue.png" width="190" height="auto">
+</div>
 
-> **Dicas:**
-- Você pode usar frameworks, tanto para o front-end (a sua escolha), quanto para o back-end (Laravel 8).
-- Você pode usar ferramentas de automação (Grunt, Gulp), mas deverá informar o uso completo para funcionamento do teste.
-- Será considerado ponto positivo no teste a utilização de orientação a objetos, design patterns e rotinas para testes.
+```bash
+# Go to web folder
+$ cd web
 
+# Install Dependencies
+$ yarn install
 
-## Entrega
+# Run Aplication
+$ yarn dev
 
-Para iniciar o teste, faça um fork deste repositório, crie uma branch com o seu nome completo e depois envie-nos o pull request.
-Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.
-
-
-## Nossa análise
-
-- Organização do código, separação de módulos, legibilidade e comentários.
-- Histórico de commits.
+# Conexão API
+alterar const API_URL no process.dev.env.API_URL,
+por padrão está setado "http://api.teste.local"
+```
+Go to http://localhost:8080/ to see the result.
 
 
-## Dúvidas?
+# :closed_book: License
 
-Quaisquer dúvidas que você venha a ter, abra você mesmo uma nova issue, ou mande um emai.
+Released in 2020 :closed_book: License
 
-### Boa sorte!
+Made with love by [Gabriel Santos](https://github.com/biandishilaji) 🚀.
+This project is under the [MIT license](./LICENSE).
