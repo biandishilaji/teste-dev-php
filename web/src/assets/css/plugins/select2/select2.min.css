@@ -1,0 +1,20 @@
+.avatar{
+    width:50%;
+    float:left;
+}
+.select2-container{
+    z-index:9998
+}
+.info{
+    width:100%;
+    float:right;
+}
+.clearfix{
+    width:100%;
+    clear:both;
+    float:none;
+    content: '';
+}
+li{
+    overflow:'';
+}

@@ -1,0 +1,8 @@
+//CARS
+export const FETCH_ERRORS = 'FETCH_ERRORS'
+export const FETCH_CAR = 'FETCH_CAR'
+export const FETCH_INIT_CAR = 'FETCH_INIT_CAR'
+export const FETCH_WIDGETS = 'FETCH_WIDGETS'
+export const FETCH_LIST_CAR = 'FETCH_LIST_CAR'
+export const FETCH_LIST_BRANDS = 'FETCH_LIST_BRANDS'
+

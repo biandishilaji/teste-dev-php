@@ -1,0 +1,81 @@
+.navbar-brand img {
+    height: 3rem;
+    display: block;
+}
+
+.vdp-datepicker input {
+    width: 100%;
+    border: 0;
+}
+
+.border-left-yellow {
+    border-left-color: #ee9900
+}
+
+.mt-10,
+.my-10 {
+  margin-top: 5.875rem !important; }
+
+.text-yellow {
+    color: #ee9900 !important
+}
+
+.border-bottom-yellow {
+    border-bottom-color: #ee9900
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.80002rem;
+    padding-bottom: 0.70002rem;
+    margin-right: 1.25rem;
+    font-size: 0;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+/* COMPONENTS */
+.swal2-container {
+    z-index: 10000 !important;
+}
+
+.swal2-icon.swal2-warning {
+    font-size: inherit;
+}
+
+.swal2-icon.swal2-success {
+    font-size: inherit;
+}
+
+/* HELPERS*/
+
+.vh-30 {
+    min-height: 30vh;
+    min-height: 30vh;
+}
+
+.vh-40 {
+    min-height: 40vh;
+    max-height: 40vh;
+}
+.vh-100 {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+.vh-100 {
+  min-height: 120vh;
+  max-height: 120vh;
+}
+.vh-150 {
+  min-height: 150vh;
+  max-height: 150vh;
+}
+
+.mh-40 {
+    min-height: 40vh;
+}
+
+
+.select2-container {
+  z-index: 9998 !important;
+}
