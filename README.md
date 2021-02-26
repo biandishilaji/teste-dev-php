@@ -17,8 +17,8 @@
 ### Web Screenshot
 
 <p align="center">
-   <img src="/github/list2.png" width="400px" height="300px">
-     <img src="/github/create.png" width="400px" height="300px">
+   <img src="/github/list2.png" width="370px" height="300px">
+     <img src="/github/create.png" width="370px" height="300px">
 </h1>
 
 
