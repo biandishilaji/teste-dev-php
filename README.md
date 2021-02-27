@@ -73,24 +73,6 @@ php artisan db:seed
 # Run Aplication
 $ php artisan serve or host nginx, apache
 ```
-## API ROUTES
-
- get('/cars/')
- get('/cars/list')
- get('/cars/widgets)
- get('/cars/{id}')
- 
- put('/cars/{id}')
-
- post('/cars/')
-
- delete('/cars/{id}')
-            
- get('/brands/')
- get('/brands/list')
- 
- post('/')
-
 ### 💻 Run Web Project
 
 <p align="center">
