@@ -25,7 +25,6 @@ const actions = {
   fetchInitBrands ({commit}, params) {
 
     return axios.get('/brands', {params: params}).then(response => {
-
       return Promise.resolve(response)
     })
       .catch(error => {

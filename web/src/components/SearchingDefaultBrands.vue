@@ -13,12 +13,12 @@
           <div class="col-12">
             <div class="card">
               <div class="card-body">
-                <div class="alert bg-orange-300 text-white alert-dismissible">
-                  <span class="font-weight-semibold">Atenção!</span> <h6>Foi encontrado uma ação necessária e é desejável que você a corrija para continuar.</h6>
-                </div>
+<!--                <div class="alert bg-orange-300 text-white alert-dismissible">-->
+<!--                  <span class="font-weight-semibold">Atenção!</span> <h6>Foi encontrado uma ação necessária e é desejável que você a corrija para continuar.</h6>-->
+<!--                </div>-->
                 <span  class="font-weight-semibold text-uppercase" style="font-weight: bold"><i class="icon-bubble-notification text-danger"/> {{ message }}</span>
-                <hr class="dashed">
-                <button @click.prevent="handleIgnoreBrands" class="mt-2  btn btn-sm bg-default">Ignorar e continuar
+                <br class="dashed">
+                <button @click.prevent="handleIgnoreBrands" class="mt-2 btn btn-sm bg-danger-300">Ignorar e continuar
                 </button>
                 <p><small>não recomendado.</small></p>
               </div>
@@ -57,7 +57,7 @@ export default {
       this.$store.dispatch('brands/fetchInitBrands').then(response => {
         this.handleIgnoreBrands()
       }).catch(error => {
-        this.message = error.message
+       this.message = error.message.includes('undefined') ? "Não foi possível se conectar com a Api. Verifique se o process.env.API_URL está definido corretamente." : error.message
         this.valid_continue_with_error = true
       })
     },

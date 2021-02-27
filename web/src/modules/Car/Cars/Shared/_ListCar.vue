@@ -37,7 +37,7 @@
               <skeleton type="small"/>
             </td>
           </tr>
-          <tr v-for="item in source.data">
+          <tr v-for="item in source.data" v-if="source.data && source.data.length">
             <th class="text-center">
               <div class="dropdown">
                 <button class="btn bg-green-400 dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -52,11 +52,11 @@
                 </div>
               </div>
             </th>
-            <th>{{ item.brande_name }}</th>
-            <th>{{ item.model }}</th>
-            <th>{{ item.engine }}</th>
-            <th>{{ item.color }}</th>
-            <th class="text-center">{{ item.year_of_manufacture }}</th>
+            <th>{{ item.brande_name || '-'}}</th>
+            <th>{{ item.model || '-' }}</th>
+            <th>{{ item.engine || '-'}}</th>
+            <th>{{ item.color || '-'}}</th>
+            <th class="text-center">{{ item.year_of_manufacture || '-'}}</th>
             <th class="text-nowrap">{{ moment(item.created_at).format('DD/MM/YYYY hh:mm:ss') }}</th>
           </tr>
           </tbody>
@@ -123,14 +123,7 @@ export default {
     },
     handleSubmitAndCloseModalEdit () {
       this.showModalEditCar = false
-
-      const stateCars = this.$store.state.cars.cars.data
-
-      console.log(stateCars)
-
-      stateCars.splice(stateCars.indexOf(this.selected), 1, this.selected)
-
-      console.log(stateCars)
+      this.fetch()
     },
     fetch () {
       this.params.filter = this.filters

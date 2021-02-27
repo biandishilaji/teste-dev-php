@@ -16,17 +16,17 @@ axios.defaults.paramsSerializer = params => {
 // Response interceptor
 axios.interceptors.response.use(
   response => {
-    console.log(response)
     return response.data.status == 'success' ? Promise.resolve(response.data) : Promise.reject(response.data)
   },
   error => {
+
+    console.log(error, error.response, 'teste')
 
     switch (error.response.status) {
 
       case 404:
         router.push({name: '404'})
         break;
-
     }
 
     return Promise.reject(error)

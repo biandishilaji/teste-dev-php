@@ -53,11 +53,11 @@
 
 
           <div class="text-right">
-            <button type="submit" class="btn" @click="close">Fechar</button>
-            <button type="submit" class="btn bg-default" style="opacity: 70%;pointer-events: none" v-show="!allowSave">
+            <button type="button" class="btn" @click="close">Fechar</button>
+            <button type="submit" class="btn bg-default" style="opacity: 70%;pointer-events: none" v-if="!allowSave">
               Salvar e Fechar
             </button>
-            <button type="submit" class="btn bg-default" @click.prevent="handleSubmitAndClose" v-show="allowSave">Salvar
+            <button type="submit" class="btn bg-default" @click.prevent="handleSubmitAndClose" v-if="allowSave">Salvar
               e Fechar
             </button>
           </div>
